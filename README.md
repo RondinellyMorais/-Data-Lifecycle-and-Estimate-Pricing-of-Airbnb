@@ -24,3 +24,5 @@ que que seguiremos:
 O primeiro passo é rodar os containers do data lake, airflow e do MySQL no docker.
 
 ![oi](https://github.com/RondinellyMorais/Ciclo-de-vida-de-dados-Modelo-de-estimativas-de-pre-os-do-Airbnb/blob/master/imagens/docker.png)
+
+Os dados que queremos passar pelo processo de ETL estão armazenados no zona de landing no data lake do minio.
