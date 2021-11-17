@@ -22,3 +22,5 @@ que que seguiremos:
 * Criar modelo de predição usando a biblioteca de auto machine learning com o pycaret.
 
 O primeiro passo é rodar os containers do data lake, airflow e do MySQL no docker.
+
+![oi](https://github.com/RondinellyMorais/Ciclo-de-vida-de-dados-Modelo-de-estimativas-de-pre-os-do-Airbnb/blob/master/imagens/docker.png)
