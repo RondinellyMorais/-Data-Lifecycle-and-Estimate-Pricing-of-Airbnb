@@ -51,5 +51,5 @@ Na etapa final carreguei o dataset da zona de cureted do data lake para um noteb
 categóricas e carreguei a biblioteca do pycaret.regression. Como queremos prever os preços dos imóveis devemos construir um modelo de regressão. O pycaret 
 vai criar e comparar as métricas de validação em diversos modelos de regressão automaticamente. O melhor modelo obtido foi o Light Gradient Boosting Machine. Contudo 
 quando comparamos os valore previstos com dados ainda não vistos pelo modelo, observei consideráveis discrepâncias para preços maiores do que 500. Como mostrado pela 
-métrica de avaliação R^2 e pelo gráfico dos resíduos. A justificativa para essas discrepâncias deve estar na baixa correlação das features com os valores preços. 
+métrica de avaliação R<sup>2</sup> e pelo gráfico dos resíduos. A justificativa para essas discrepâncias deve estar na baixa correlação das features com os valores preços. 
 Sendo a localização, representada pelas latitude e longitude, bem mais relevantes para se estimar o preço dos imóveis.
