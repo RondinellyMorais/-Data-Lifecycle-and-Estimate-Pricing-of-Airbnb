@@ -33,6 +33,8 @@ Em seguida rodamos as DEGs do airflow. Escrevi 4 DEGs, duas para extrair as tabe
 processing. Uma DEG para extrair uma tabela de uma base de dados MySQL, transformar os dados e carregar na zona de processing. Criei uma última DEG para unir todos 
 os arquivos .parquert e armazenar na zona de processing.
 
+![hello](https://github.com/RondinellyMorais/Ciclo-de-vida-de-dados-Modelo-de-estimativas-de-pre-os-do-Airbnb/blob/master/imagens/airflow.png)
+
 Uma vez que tenhamos nossa base de dados construída podemos carrega-la em qualquer notebook através da conecção ao data lake usando a função de client.fget_object().
 Ao fazer uma análise exploratória de dados preliminar, preenchemos as linhas identificadas com dados ausentes e removemos features desnecessárias. Ao testarmos as 
 correlações das features numéricas, encontrei que as maiores correlações entre o preço e as features ocorre para os valores de longitude e latitude dos imóveis. 
