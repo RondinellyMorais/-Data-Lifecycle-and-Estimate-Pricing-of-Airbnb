@@ -42,7 +42,7 @@ os arquivos .parquert e armazenar na zona de processing.
 Uma vez que tenhamos nossa base de dados construída podemos carrega-la em qualquer notebook através da conecção ao data lake usando a função de client.fget_object().
 Ao fazer uma análise exploratória de dados preliminar, preenchemos as linhas identificadas com dados ausentes e removemos features desnecessárias. Ao testarmos as 
 correlações das features numéricas, encontrei que as maiores correlações entre o preço e as features ocorre para os valores de longitude e latitude dos imóveis. 
-Em outras palavras, a localização dos imóveis oferecidos pelo airbnb é fator mais importante para determinar seu preço de locação. O notebook desta análise exploratória de dados pode ser encontrado no seguinte link:[airbnb_analysis](https://github.com/RondinellyMorais/-Data-Lifecycle-and-Estimate-Pricing-of-Airbnb/blob/master/notebooks/airbnb_analysis.ipynb). No final da análise de dados criei um novo dataset .csv e salvei no data lake na zona de cureted
+Em outras palavras, a localização dos imóveis oferecidos pelo airbnb é fator mais importante para determinar seu preço de locação. O notebook desta análise exploratória de dados pode ser encontrado no seguinte link: [airbnb_analysis](https://github.com/RondinellyMorais/-Data-Lifecycle-and-Estimate-Pricing-of-Airbnb/blob/master/notebooks/airbnb_analysis.ipynb). No final da análise de dados criei um novo dataset .csv e salvei no data lake na zona de cureted
 
 ![kunichua](https://github.com/RondinellyMorais/Ciclo-de-vida-de-dados-Modelo-de-estimativas-de-pre-os-do-Airbnb/blob/master/imagens/minio03.png)
 
@@ -50,5 +50,9 @@ Na etapa final carreguei o dataset da zona de cureted do data lake para um noteb
 categóricas e carreguei a biblioteca do pycaret.regression. Como queremos prever os preços dos imóveis devemos construir um modelo de regressão. O pycaret 
 vai criar e comparar as métricas de validação em diversos modelos de regressão automaticamente. O melhor modelo obtido foi o Light Gradient Boosting Machine. Contudo 
 quando comparamos os valore previstos com dados ainda não vistos pelo modelo, observei consideráveis discrepâncias para preços maiores do que 500. Como mostrado pela 
-métrica de avaliação R<sup>2</sup> e pelo gráfico dos resíduos. O notebook do modelo de previsão pode ser encontradono no seguinte link [airbnb_ml](https://github.com/RondinellyMorais/-Data-Lifecycle-and-Estimate-Pricing-of-Airbnb/blob/master/notebooks/airbnb_ml.ipynb). A justificativa para essas discrepâncias deve estar na baixa correlação das features com os valores preços. 
+métrica de avaliação R<sup>2</sup> e pelo gráfico dos resíduos. 
+
+![graf](https://github.com/RondinellyMorais/-Data-Lifecycle-and-Estimate-Pricing-of-Airbnb/blob/master/imagens/graf.png)
+
+O notebook do modelo de previsão pode ser encontradono no seguinte link: [airbnb_ml](https://github.com/RondinellyMorais/-Data-Lifecycle-and-Estimate-Pricing-of-Airbnb/blob/master/notebooks/airbnb_ml.ipynb). A justificativa para essas discrepâncias deve estar na baixa correlação das features com os valores preços. 
 Sendo a localização, representada pelas latitude e longitude, bem mais relevantes para se estimar o preço dos imóveis.
