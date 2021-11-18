@@ -2,8 +2,7 @@
 
 [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 
-Temos dois objetivos principais para demostrar nesse trabalho: O primeiro é descobrir quais fatores são mais relevantes para se estimar os preços de locação dos imóveis oferecidos pelo sistema de serviço do airbnb. O segundo objetivo é mostrar como podemos encontar a solução do priveiro objetivo passando por todas as etapas do ciclo de vida de dados.
-Para realizar esse objetivo, vamos usar poderosas ferramentas de ciência de dados, como docker, airflow, banco de dados MySQL e data lake minio. 
+Temos dois objetivos principais para demostrar nesse trabalho: O primeiro é descobrir quais fatores são mais relevantes para se estimar os preços de locação dos imóvei oferecidos pelo sistema de serviço do airbnb. O segundo objetivo é mostrar como podemos encontar a solução do primeiro objetivo passando por todas as etapas do ciclo de vida de dados. Para alcansar esses objetivos, vamos usar poderosas ferramentas de ciência de dados, como docker, airflow, banco de dados MySQL e data lake minio. Ter conheciemnto nas ferramentas para manejar dados desde a etapas de extrair até o deploy de um modelo em pordução é fudamental na carreira de qualquer ciêntista de dados.
 
 Como sabemos o airbnb é um aplicativo de serviço para localização e locação de imóveis em diversos lugares espalhados pelo mundo. O modelo de negócio do airbnb é 
 classificado como um tipo de múltipla plataforma onde os clientes se conectam aos fornecedores do serviço. Em 2020 a empresa foi avalida em quase U$$ 100 bilhões.
