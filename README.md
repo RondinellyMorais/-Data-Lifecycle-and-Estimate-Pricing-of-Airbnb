@@ -1,4 +1,4 @@
-# Ciclo de vida de dados: Modelo de Estimativas dos Preços do Airbnb
+# Ciclo de Vida de Dados: Modelo de Estimativas dos Preços do Airbnb
 
 Temos dois objetivos principais para demostrar nesse trabalho: O primeiro é descobrir quais fatores são mais relevantes para se estimar os preços de locação dos imóveis oferecidos pelo sistema de serviço do airbnb. O segundo objetivo é mostrar como podemos encontar a solução do priveiro objetivo passando por todas as etapas do ciclo de vida de dados.
 Para realizar esse objetivo, vamos usar poderosas ferramentas de ciência de dados, como docker, airflow, banco de dados MySQL e data lake minio. 
