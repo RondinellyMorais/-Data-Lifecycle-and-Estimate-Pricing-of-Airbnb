@@ -25,9 +25,11 @@ O primeiro passo é rodar os containers do data lake, airflow e do MySQL no dock
 
 ![oi](https://github.com/RondinellyMorais/Ciclo-de-vida-de-dados-Modelo-de-estimativas-de-pre-os-do-Airbnb/blob/master/imagens/docker.png)
 
-Os dados que queremos passar pelo processo de ETL estão armazenados no zona de landing no data lake do minio.
+Os dados que queremos passar pelo processo de ETL estão armazenados no zona de landing no data lake do minio e no banco de dados MySQL
 
 ![hallo](https://github.com/RondinellyMorais/Ciclo-de-vida-de-dados-Modelo-de-estimativas-de-pre-os-do-Airbnb/blob/master/imagens/minio01.png)
+
+![my](https://github.com/RondinellyMorais/Ciclo-de-vida-de-dados-Modelo-de-estimativas-de-pre-os-do-Airbnb/blob/master/imagens/my.png)
 
 Em seguida rodamos as DEGs do airflow. Escrevi 4 DEGs, duas para extrair as tabelas xlsx da landing do minio e salvar os dados em tabelas .parquet na zona de 
 processing. Uma DEG para extrair uma tabela de uma base de dados MySQL, transformar os dados e carregar na zona de processing. Criei uma última DEG para unir todos 
